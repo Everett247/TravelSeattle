@@ -9,7 +9,7 @@ backgroundColor: '#1C1C1C'
 
 var win1 = Titanium.UI.createWindow({  
     title:'Home page',
-    backgroundColor: '#899D6E'
+    backgroundImage:'/Images/seattleneedle.jpg'
 });
 
 var label1 = Titanium.UI.createLabel({
@@ -74,9 +74,13 @@ var label4 = Titanium.UI.createLabel({
 	textAlign:'center',
 	width:'auto'
 });
+var image = Ti.UI.createImageView({
+	image:'/Images/Seahawks.jpg'
+});
 
 win2.add(label2);
 win2.add(label4);
+win2.add(image);
 
 var NavButton2 = Ti.UI.createButton({
 	title: 'Home Page',
@@ -99,4 +103,5 @@ NavButton2.addEventListener('click', function() {
 });
 
 win1.open();
+
 
